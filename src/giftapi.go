@@ -56,8 +56,8 @@ func GetInventoryResources() (any, error) {
 }
 
 func CellsMerge(ids []int) (any, error) {
-	b, _ := json.Marshal(map[string]any{"cell_ids": ids})
-	return req("POST", api+"/game2048/cells/merge", b)
+	data, _ := json.Marshal(map[string]any{"cell_ids": ids})
+	return req("POST", api+"/game2048/cells/merge", data)
 }
 
 func BurnMerge(id int) (any, error) {
