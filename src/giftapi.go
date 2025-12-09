@@ -1,4 +1,4 @@
-package giftapi
+package main
 
 import (
 	"bytes"
